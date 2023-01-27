@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <!-- Esto es un comentario -->
-<html>
+<html lang="es">
     <head>
         <title>TechShop</title>
         <meta charset="UTF-8"/>
+        <meta name="description" content="Página de la semana 2, Web y patrones"/>
+        <meta name="keywords" content="Fidelitas, HTML, WEB"/>
+        <link href="img/css/estilos.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
-        <h1 style="text-align: center;background-color: blue; color: white">Home</h1>
-        <p>Este es el sitio web de TechShop</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit at, malesuada natoque tincidunt. Pulvinar netus nisl commodo habitasse euismod lacus viverra vehicula, non maecenas fringilla himenaeos class porta platea, parturient nec diam ultrices bibendum in ante. Montes sociis vel mus dictum euismod nisi sollicitudin curae mauris eleifend pharetra, felis odio ridiculus ullamcorper fusce senectus donec semper placerat tortor, praesent porttitor platea diam malesuada vestibulum tempor vehicula magnis elementum. Natoque diam torquent cum luctus erat accumsan curae, taciti sodales fames ultrices condimentum et a, integer quisque egestas rhoncus netus non.</p>
+        <header>
+            <h1 class="header">TechShop</h1>
+            <nav>
+                <a href="ejemplo6.html">Back</a>  |
+                <a href="index.html">Home</a>     |
+                <a href="ejemplo2.html">Next</a><hr>               
+            </nav>
+            <hr>
+        </header>
+        <aside class="aside">
+            <h2 id="noticia">Novedades de la semana</h2>
+            <p>En esta semana tenemos en oferta el producto de videojuegos</p>
+        </aside>
+        <section class="contenido">
 
-        <p style="text-align: center">Parturient rutrum <span style="background-color: red;color: yellow">euismod lobortis</span> convallis pulvinar suspendisse egestas bibendum pretium congue montes torquent, ut a elementum faucibus iaculis cursus sociis fermentum suscipit ullamcorper nunc, urna viverra molestie purus imperdiet leo sed nibh metus scelerisque semper. Ad sed pellentesque quis erat ultricies ornare, arcu per pretium ante himenaeos nostra, consequat nascetur in euismod dignissim duis, nisi et congue diam laoreet. Pharetra velit malesuada luctus netus penatibus justo metus feugiat vehicula, ac rutrum purus scelerisque cras pretium mattis diam inceptos aptent, phasellus nibh habitant hendrerit mi maecenas dignissim per.</p>
+            <h2>Nuestros productos</h2>
+            <article>
+                <header>
+                    <h3 class="titulo">Alienware 5000</h3> 
+                </header>
+                <figure>
+                    <img src="img/alienware.jpg" alt="Imagen de un equipo marca Alienware"/>
+                    <figcaption>Equipo en promoción</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit at, malesuada natoque tincidunt. Pulvinar netus nisl commodo habitasse euismod lacus viverra vehicula, non maecenas fringilla himenaeos class porta platea, parturient nec diam ultrices bibendum in ante. Montes sociis vel mus dictum euismod nisi sollicitudin curae mauris eleifend pharetra, felis odio ridiculus ullamcorper fusce senectus donec semper placerat tortor, praesent porttitor platea diam malesuada vestibulum tempor vehicula magnis elementum. Natoque diam torquent cum luctus erat accumsan curae, taciti sodales fames ultrices condimentum et a, integer quisque egestas rhoncus netus non.</p>
+                <footer>¢450.000 <a href="#">Comprar</a></footer>
+            </article>
+            
+               <article>
+                <header>
+                    <h3 class="titulo">HO 7000</h3> 
+                </header>
+                <figure>
+                    <img src="img/hp7000.jpg" alt="" width="300"/>
+                    <figcaption>Equipo en promoción</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit at, malesuada natoque tincidunt. Pulvinar netus nisl commodo habitasse euismod lacus viverra vehicula, non maecenas fringilla himenaeos class porta platea, parturient nec diam ultrices bibendum in ante. Montes sociis vel mus dictum euismod nisi sollicitudin curae mauris eleifend pharetra, felis odio ridiculus ullamcorper fusce senectus donec semper placerat tortor, praesent porttitor platea diam malesuada vestibulum tempor vehicula magnis elementum. Natoque diam torquent cum luctus erat accumsan curae, taciti sodales fames ultrices condimentum et a, integer quisque egestas rhoncus netus non.</p>
+                <footer>¢550.000 <a href="#">Comprar</a></footer>
+            </article>         
 
-        <p style="text-align: right">Porttitor class ullamcorper commodo litora ridiculus auctor rutrum molestie nascetur, elementum dapibus vestibulum congue morbi pharetra euismod mi aenean dictum, turpis blandit potenti arcu vulputate posuere ultricies facilisis. Curabitur tellus feugiat dapibus cubilia facilisi sem diam curae aliquet habitasse a, torquent pretium commodo ligula sociosqu bibendum ut neque malesuada mollis. Curae tristique varius nisi hac nostra iaculis vitae mattis, vivamus imperdiet mauris curabitur quisque felis sociis.</p>
+            <p>Parturient rutrum euismod lobortis convallis pulvinar suspendisse egestas bibendum pretium congue montes torquent, ut a elementum faucibus iaculis cursus sociis fermentum suscipit ullamcorper nunc, urna viverra molestie purus imperdiet leo sed nibh metus scelerisque semper. Ad sed pellentesque quis erat ultricies ornare, arcu per pretium ante himenaeos nostra, consequat nascetur in euismod dignissim duis, nisi et congue diam laoreet. Pharetra velit malesuada luctus netus penatibus justo metus feugiat vehicula, ac rutrum purus scelerisque cras pretium mattis diam inceptos aptent, phasellus nibh habitant hendrerit mi maecenas dignissim per.</p>
+            <p>Porttitor class ullamcorper commodo litora ridiculus auctor rutrum molestie nascetur, elementum dapibus vestibulum congue morbi pharetra euismod mi aenean dictum, turpis blandit potenti arcu vulputate posuere ultricies facilisis. Curabitur tellus feugiat dapibus cubilia facilisi sem diam curae aliquet habitasse a, torquent pretium commodo ligula sociosqu bibendum ut neque malesuada mollis. Curae tristique varius nisi hac nostra iaculis vitae mattis, vivamus imperdiet mauris curabitur quisque felis sociis.</p>
+
+        </section>
+        <footer class="footer">
+            Desarrollos Tecnológicos Coronado 2023 &COPY
+        </footer>
     </body>
 </html>

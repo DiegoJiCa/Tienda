@@ -1,0 +1,85 @@
+
+/* Este es un archivo para CSS*/
+
+*{
+    margin: 0; /* elimina el espacio entre el texto y la pantalla al lado izquierdo*/
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    padding: 80px 20px 0 0;    /*es el espacio entre el borde y el contenido. Altura abajo lado lado*/
+}
+
+.header{  /*aplica al encabezado. En el header deseado se debe poner class="header"*/
+    background-color: #076af0;
+    height: 80px; /*altura de la caja*/
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+
+
+}
+
+.aside{
+    background-color: aqua;
+    position: fixed;  /*posición fija. Para poder moverlo*/
+    top: 80px;
+    left:0;
+    bottom: 20px; /* Se va hasta abajo*/
+    width: 20%;
+}
+
+.contenido{
+    background-color: burlywood;
+    position: fixed;  /*posición fija. Para poder moverlo*/
+    top: 80px;
+    left:20%; /* Para que no se sobreponga al aside*/
+    bottom: 20px; /* Se va hasta abajo*/
+    overflow: scroll; /* Para que cuando se sobrepase, se pueda hacer scroll */
+
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    position: fixed;  /*posición fija. Para poder moverlo*/
+    left:0; /* Para que no se sobreponga al aside*/
+    bottom: 0; /* Se va hasta abajo*/
+    width: 100%;
+
+
+
+}
+
+
+
+/*aplica a todos los párrafos*/
+p{
+    color: green;
+}
+
+/*solo los párrafos que están dentro de una etiqueta article*/
+article p{
+    color: blue;
+}
+
+/*El encabezado de aside utilice este color
+Se debe utilizar solo una vez en una página*/
+#noticia{
+    color: brown
+}
+
+/*Se puede utilizar varias veces en una página
+se debe agregar class="titulo" a los headers que quiere modificar*/
+.titulo{
+    color: blueviolet;
+
+}
+
+/*modelo de cajas
+Características: es usado para dar formato a la página de manera visual
+se debe utilizar un conector universal asterisco al inicio del archivo*/
