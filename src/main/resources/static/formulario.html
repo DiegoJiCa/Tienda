@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Esto es un comentario -->
+<html lang="es">
+    <head>
+        <title>TechShop</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Página de la semana 2, Web y patrones"/>
+        <meta name="keywords" content="Fidelitas, HTML, WEB"/>
+        <link href="img/css/estilos.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <header>
+            <h1 class="header">TechShop</h1>
+            <nav>
+                <a href="ejemplo6.html">Back</a>  |
+                <a href="index.html">Home</a>     |
+                <a href="ejemplo2.html">Next</a><hr>               
+            </nav>
+            <hr>
+        </header>
+        <aside class="aside">
+            <h2 id="noticia">Novedades de la semana</h2>
+            <p>En esta semana tenemos en oferta el producto de videojuegos</p>
+        </aside>
+        <section class="contenido">
+
+            <h2>Clientes</h2>
+            <article>
+                <h3>Listado de Clientes</h3>
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <th class="textoCentrado">Id</th>
+                            <th class="textoCentrado">Nombre</th>
+                            <th class="textoCentrado">Edad</th>
+                            <th class="textoCentrado">Salario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="textoCentrado">1</td>
+                            <td>Juan Pérez Castro</td>
+                            <td class="textoCentrado">35</td>
+                            <td class="textoDerecha">¢1 450 000</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">2</td>
+                            <td>Rebeca María Arguedas</td>
+                            <td class="textoCentrado">39</td>
+                            <td class="textoDerecha">¢1 200 000</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">3</td>
+                            <td>Pedro Contreras</td>
+                            <td class="textoCentrado">22</td>
+                            <td class="textoDerecha">¢800 000</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">4</td>
+                            <td>Ana Lucía Artavia</td>
+                            <td class="textoCentrado">26</td>
+                            <td class="textoDerecha">¢1 600 000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+            </article>
+
+
+            <hr>
+            <article>
+                <h3>Registro de Clientes</h3>
+                <form action="/cliente/insertar">
+                    
+                    <fieldset>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" value="" size="40" />
+                    </fieldset>  
+
+                    <fieldset>
+                        <label>Clave</label>
+                        <input type="password" name="clave" value="" size="40" />
+                    </fieldset>  
+
+                    <fieldset>
+                        <label>Edad</label>
+                        <input type="number" 
+                               name="edad" 
+                               min="18"
+                               value="" />
+                    </fieldset>  
+
+                    <fieldset>
+                        <label>Salario</label>
+                        <input type="number" 
+                               name="salario" 
+                               min="500000"
+                               value="" />
+                    </fieldset>
+                    <input type="submit" value="Enviar" />
+                </form>
+            </article> 
+
+
+        </section>
+        <footer class="footer">
+            Desarrollos Tecnológicos Coronado 2023. &COPY
+        </footer>
+    </body>
+</html>
