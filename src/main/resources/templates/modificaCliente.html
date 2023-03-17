@@ -1,43 +1,41 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
+    <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h2>Datos de Cliente</h2>
-        <br>
-        <hr>
-        <a th:href="@{/}">Regresar</a>
-
-        <form th:action="@{/cliente/guardar}"
-              method="post"
-              th:object="${cliente}">
-            <input type="hidden" name="idCliente" th:field="*{idCliente}" />
-
-            <label>Nombre</label>
-            <input type="text" name="nombre" value="" th:field="*{nombre}"size="30" />
+        <header th:replace="~{layout/plantilla :: header}"/>
+            <h2>Datos de Cliente</h2>
             <br>
+            <hr>
+            <a th:href="@{/}">Regresar</a>
 
-            <label>Apellidos</label>
-            <input type="text" name="apellidos" value="" th:field="*{apellidos}"size="40" />
-            <br>
+            <form th:action="@{/cliente/guardar}"
+                  method="post"
+                  th:object="${cliente}">
+                <input type="hidden" name="idCliente" th:field="*{idCliente}" />
 
-            <label>Correo</label>
-            <input type="email" name="correo" value="" th:field="*{correo}"size="15" />
-            <br>   
+                <label>Nombre</label>
+                <input type="text" name="nombre" value="" th:field="*{nombre}"size="30" />
+                <br>
 
-            <label>Teléfono</label>
-            <input type="tel" name="telefono" value="" th:field="*{telefono}"size="10" />
-            <br> 
+                <label>Apellidos</label>
+                <input type="text" name="apellidos" value="" th:field="*{apellidos}"size="40" />
+                <br>
 
-            <input type="submit" value="Guardar" />
-        </form>
+                <label>Correo</label>
+                <input type="email" name="correo" value="" th:field="*{correo}"size="15" />
+                <br>   
 
+                <label>Teléfono</label>
+                <input type="tel" name="telefono" value="" th:field="*{telefono}"size="10" />
+                <br> 
 
+                <input type="submit" value="Guardar" />
+            </form>
 
-
+            <footer th:replace="~{layout/plantilla :: footer}"/>
 
     </body>
 </html>
