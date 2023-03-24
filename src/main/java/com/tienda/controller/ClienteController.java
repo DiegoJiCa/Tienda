@@ -2,7 +2,6 @@ package com.tienda.controller;
 
 import com.tienda.domain.Cliente;
 import com.tienda.service.ClienteService;
-import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,15 +15,15 @@ public class ClienteController {
 
     @Autowired
     private ClienteService clienteService;
-  
+
     @GetMapping("/listado")
-    public String inicio(Model model){
-        var clientes=clienteService.getClientes();
+    public String inicio(Model model) {
+        var clientes = clienteService.getClientes();
         model.addAttribute("clientes", clientes);
+        model.addAttribute("totalClientes", clientes.size());
         return "/cliente/listado";
     }
-    
-    
+
     @GetMapping("/eliminar/{idCliente}")
     public String eliminaCliente(Cliente cliente) {
         clienteService.deleteCliente(cliente);
