@@ -11,36 +11,36 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
-    
+
     @Autowired
     private CreditoDao creditoDao;
-    
+
     @Autowired
     private ClienteDao clienteDao;
-    
+
     @Override
     public List<Cliente> getClientes() {
         return (List<Cliente>) clienteDao.findAll();
     }
-    
+
     @Override
     public Cliente getCliente(Cliente cliente) {
         return clienteDao.findById(cliente.getIdCliente()).orElse(null);
-        
+
     }
-    
+
     @Override
     public void deleteCliente(Cliente cliente) {
         clienteDao.delete(cliente);
     }
-    
+
     @Override
     public void saveCliente(Cliente cliente) {
-        clienteDao.save(cliente);
-        
+
         Credito credito = cliente.getCredito();
         credito = creditoDao.save(credito);
         cliente.setCredito(credito);
+        clienteDao.save(cliente);
     }
-    
+
 }
