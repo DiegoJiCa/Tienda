@@ -26,7 +26,6 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public Cliente getCliente(Cliente cliente) {
         return clienteDao.findById(cliente.getIdCliente()).orElse(null);
-
     }
 
     @Override
@@ -36,7 +35,6 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public void saveCliente(Cliente cliente) {
-
         Credito credito = cliente.getCredito();
         credito = creditoDao.save(credito);
         cliente.setCredito(credito);
